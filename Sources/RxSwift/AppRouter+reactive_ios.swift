@@ -15,27 +15,27 @@
 
 public extension Reactive where Base: UIViewController {
     /// Observe viewDidLoad calls on current instance
-    public func onViewDidLoad() -> Signal<Void> {
+    func onViewDidLoad() -> Signal<Void> {
         return ARViewControllerLifeCycleManager.instance.didLoad.asSignal(onErrorSignalWith: .empty()).filter{ [weak base] in $0 === base }.map{ _ in () }
     }
     
     /// Observe viewWillAppear calls on current instance
-    public func onViewWillAppear() -> Signal<Bool> {
+    func onViewWillAppear() -> Signal<Bool> {
         return filterInstance(ARViewControllerLifeCycleManager.instance.willAppear)
     }
     
     /// Observe viewDidAppear calls on current instance
-    public func onViewDidAppear() -> Signal<Bool> {
+    func onViewDidAppear() -> Signal<Bool> {
         return filterInstance(ARViewControllerLifeCycleManager.instance.didAppear)
     }
     
     /// Observe viewWillDisappear calls on current instance
-    public func onViewWillDisappear() -> Signal<Bool> {
+    func onViewWillDisappear() -> Signal<Bool> {
         return filterInstance(ARViewControllerLifeCycleManager.instance.willDisappear)
     }
     
     /// Observe viewDidDisappear calls on current instance
-    public func onViewDidDisappear() -> Signal<Bool> {
+    func onViewDidDisappear() -> Signal<Bool> {
         return filterInstance(ARViewControllerLifeCycleManager.instance.didDisappear)
     }
     
@@ -46,7 +46,7 @@ public extension Reactive where Base: UIViewController {
 
 public extension Reactive where Base: UIViewController {
     /// observe viewDidLoad calls on all instances of current type
-    public static func onViewDidLoad() -> Signal<Base> {
+    static func onViewDidLoad() -> Signal<Base> {
         return ARViewControllerLifeCycleManager.instance.didLoad.asSignal(onErrorSignalWith: .empty()).flatMap{
             if let required = $0 as? Base {
                 return .just(required)
@@ -57,22 +57,22 @@ public extension Reactive where Base: UIViewController {
     }
     
     /// observe viewWillAppear calls on all instances of current type
-    public static func onViewWillAppear() -> Signal<(controller: Base, animated: Bool)> {
+    static func onViewWillAppear() -> Signal<(controller: Base, animated: Bool)> {
         return filterBase(ARViewControllerLifeCycleManager.instance.willAppear)
     }
     
     /// observe viewDidAppear calls on all instances of current type
-    public static func onViewDidAppear() -> Signal<(controller: Base, animated: Bool)> {
+    static func onViewDidAppear() -> Signal<(controller: Base, animated: Bool)> {
         return filterBase(ARViewControllerLifeCycleManager.instance.didAppear)
     }
     
     /// observe viewWillDisappear calls on all instances of current type
-    public static func onViewWillDisappear() -> Signal<(controller: Base, animated: Bool)> {
+    static func onViewWillDisappear() -> Signal<(controller: Base, animated: Bool)> {
         return filterBase(ARViewControllerLifeCycleManager.instance.willDisappear)
     }
     
     /// observe viewDidDisappear calls on all instances of current type
-    public static func onViewDidDisappear() -> Signal<(controller: Base, animated: Bool)> {
+    static func onViewDidDisappear() -> Signal<(controller: Base, animated: Bool)> {
         return filterBase(ARViewControllerLifeCycleManager.instance.didDisappear)
     }
     

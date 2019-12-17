@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6351BC4C23A9404300F5C9B8 /* Dip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5F2109C87D00E42364 /* Dip.framework */; };
+		6351BC4D23A9404300F5C9B8 /* Dip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5F2109C87D00E42364 /* Dip.framework */; };
+		6351BC4E23A9404900F5C9B8 /* ReusableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5D2109C87D00E42364 /* ReusableView.framework */; };
+		6351BC4F23A9405100F5C9B8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5C2109C87D00E42364 /* RxCocoa.framework */; };
+		6351BC5023A9405300F5C9B8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5C2109C87D00E42364 /* RxCocoa.framework */; };
+		6351BC5123A9405A00F5C9B8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5E2109C87D00E42364 /* RxSwift.framework */; };
+		6351BC5223A9405B00F5C9B8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5E2109C87D00E42364 /* RxSwift.framework */; };
+		6351BC5323A9406900F5C9B8 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6351BC4A23A93D9000F5C9B8 /* RxRelay.framework */; };
+		6351BC5523A9411800F5C9B8 /* Dip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5F2109C87D00E42364 /* Dip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6351BC5623A9411800F5C9B8 /* ReusableView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5D2109C87D00E42364 /* ReusableView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6351BC5723A9411800F5C9B8 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5C2109C87D00E42364 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6351BC5823A9411800F5C9B8 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5E2109C87D00E42364 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6351BC5923A9411800F5C9B8 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6351BC4A23A93D9000F5C9B8 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6351BC5A23A9411800F5C9B8 /* AppRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C089D31E1D54A3BF00599DD7 /* AppRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6351BC5B23A9411800F5C9B8 /* AppRouterRx.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0D64FD81FB44E25003B6B89 /* AppRouterRx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6351BC5C23A9411800F5C9B8 /* AppRouterRoute.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0BD35582102507A00513C86 /* AppRouterRoute.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0388C602109C88800E42364 /* Dip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5F2109C87D00E42364 /* Dip.framework */; };
 		C0388C612109C88800E42364 /* ReusableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5D2109C87D00E42364 /* ReusableView.framework */; };
 		C0388C622109C88800E42364 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0388C5C2109C87D00E42364 /* RxCocoa.framework */; };
@@ -86,7 +102,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6351BC5423A940F000F5C9B8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6351BC5523A9411800F5C9B8 /* Dip.framework in Embed Frameworks */,
+				6351BC5623A9411800F5C9B8 /* ReusableView.framework in Embed Frameworks */,
+				6351BC5723A9411800F5C9B8 /* RxCocoa.framework in Embed Frameworks */,
+				6351BC5823A9411800F5C9B8 /* RxSwift.framework in Embed Frameworks */,
+				6351BC5923A9411800F5C9B8 /* RxRelay.framework in Embed Frameworks */,
+				6351BC5A23A9411800F5C9B8 /* AppRouter.framework in Embed Frameworks */,
+				6351BC5B23A9411800F5C9B8 /* AppRouterRx.framework in Embed Frameworks */,
+				6351BC5C23A9411800F5C9B8 /* AppRouterRoute.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6351BC4A23A93D9000F5C9B8 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		9A4F5FE91BF89C4800E731F4 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Tests.plist; path = Plists/Tests.plist; sourceTree = "<group>"; };
 		C02C11791D59AC9F005F6E79 /* AppRouter+reactive_ios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AppRouter+reactive_ios.swift"; path = "RxSwift/AppRouter+reactive_ios.swift"; sourceTree = "<group>"; };
 		C0388C5C2109C87D00E42364 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -148,6 +186,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6351BC5223A9405B00F5C9B8 /* RxSwift.framework in Frameworks */,
+				6351BC5023A9405300F5C9B8 /* RxCocoa.framework in Frameworks */,
+				6351BC4E23A9404900F5C9B8 /* ReusableView.framework in Frameworks */,
+				6351BC4D23A9404300F5C9B8 /* Dip.framework in Frameworks */,
+				6351BC5323A9406900F5C9B8 /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +217,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6351BC4C23A9404300F5C9B8 /* Dip.framework in Frameworks */,
 				C0BD355E2102521F00513C86 /* AppRouter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +226,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6351BC5123A9405A00F5C9B8 /* RxSwift.framework in Frameworks */,
+				6351BC4F23A9405100F5C9B8 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +260,7 @@
 				C0388C5D2109C87D00E42364 /* ReusableView.framework */,
 				C0388C5C2109C87D00E42364 /* RxCocoa.framework */,
 				C0388C5E2109C87D00E42364 /* RxSwift.framework */,
+				6351BC4A23A93D9000F5C9B8 /* RxRelay.framework */,
 				9A03334B1C6FBDDC00065221 /* Supporting Files */,
 				9AC8C9F11969BBB5006F1EAC /* Code */,
 				9AC8C9FF1969BBB5006F1EAC /* Tests */,
@@ -428,6 +475,7 @@
 				C0388C6B2109CA3F00E42364 /* Sources */,
 				C0388C6C2109CA3F00E42364 /* Frameworks */,
 				C0388C6D2109CA3F00E42364 /* Resources */,
+				6351BC5423A940F000F5C9B8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -522,7 +570,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Artem Antihevich";
 				TargetAttributes = {
 					C0388C6E2109CA3F00E42364 = {
@@ -553,7 +601,7 @@
 			};
 			buildConfigurationList = 9AC8C9EA1969BBB5006F1EAC /* Build configuration list for PBXProject "AppRouter" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -807,7 +855,7 @@
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -869,7 +917,7 @@
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -900,7 +948,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -928,7 +975,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -937,7 +983,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L94VC9ZZXC;
@@ -953,7 +999,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
@@ -962,7 +1007,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L94VC9ZZXC;
@@ -978,7 +1023,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
@@ -1001,7 +1045,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
 			};
 			name = Debug;
@@ -1025,7 +1068,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
 			};
 			name = Release;
@@ -1034,7 +1076,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L94VC9ZZXC;
@@ -1050,7 +1092,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1058,7 +1099,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L94VC9ZZXC;
@@ -1074,7 +1115,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1082,7 +1122,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L94VC9ZZXC;
@@ -1098,7 +1138,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
-				SWIFT_VERSION = 4.2;
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
@@ -1107,7 +1146,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L94VC9ZZXC;
@@ -1123,7 +1162,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
-				SWIFT_VERSION = 4.2;
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;

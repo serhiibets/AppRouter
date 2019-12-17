@@ -82,7 +82,7 @@ open class Route<T: UIViewController> : AppRouter.Presenter.Configuration<T> whe
     }
 }
 
-extension ObservableConvertibleType where Self.E: BasicRouteProtocol {
+extension ObservableConvertibleType where Self.Element: BasicRouteProtocol {
     public func push() -> Disposable {
         return self.asObservable().bind(onNext: {
             _ = try? $0.push()
