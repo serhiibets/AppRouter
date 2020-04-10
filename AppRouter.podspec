@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author       = { "Artem Antihevich" => "sinarionn@gmail.com" }
   s.social_media_url = 'https://twitter.com/sinarionn'
 
-  s.ios.deployment_target = "9.0"
+  s.ios.deployment_target = "10.0"
   s.source       = { :git => "https://github.com/MLSDev/AppRouter.git", :tag => s.version.to_s }
   s.requires_arc = true
 
@@ -18,27 +18,27 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |core|
       core.source_files = 'Sources/Core/*.swift'
-      core.ios.deployment_target = "9.0"
+      core.ios.deployment_target = "10.0"
   end
 
   s.subspec 'Route' do |route|
       route.source_files = 'Sources/Route/AppRouter+route.swift'
       route.dependency 'AppRouter/Core'
-      route.dependency 'RxCocoa', '~> 4.0'
+      route.dependency 'RxCocoa', '~> 5.1.1'
       route.dependency 'ReusableView', '~> 2.0'
-      route.ios.deployment_target = "9.0"
+      route.ios.deployment_target = "10.0"
 
       route.subspec 'Dip' do |dip|
           dip.source_files = 'Sources/Route/*.swift'
-          dip.dependency 'Dip', '~> 7.0'
-          dip.ios.deployment_target = "9.0"
+          dip.dependency 'Dip', '~> 7.1.1'
+          dip.ios.deployment_target = "10.0"
       end
   end
 
   s.subspec 'RxSwift' do |rxswift|
-      rxswift.ios.deployment_target = "9.0"
+      rxswift.ios.deployment_target = "10.0"
       rxswift.osx.deployment_target = "10.10"
-      rxswift.dependency 'RxCocoa', '~> 4.0'
+      rxswift.dependency 'RxCocoa', '~> 5.1.1'
       rxswift.source_files = 'Sources/RxSwift/*.swift'
   end
 
